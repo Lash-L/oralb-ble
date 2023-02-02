@@ -140,7 +140,7 @@ DEVICE_TYPES = {
         modes=SMART_SERIES_MODES,
     ),
     Models.SmartSeries9000: ModelDescription(
-        device_type="Smart Series 9000",
+        device_type="Smart Series 9000/10000",
         modes=SMART_SERIES_MODES,
     ),
 }
@@ -194,7 +194,7 @@ ORALB_MANUFACTURER = 0x00DC
 
 BYTES_TO_MODEL = {
     b"\x062k": Models.IOSeries67,
-    b"\x074\x0c": Models.IOSeries4,
+    b"\x074": Models.IOSeries4,
     b"\x03V\x04": Models.SmartSeries4000,
     b"\x04'\r": Models.SmartSeries6000,
     b'\x03"\x0c': Models.SmartSeries8000,
